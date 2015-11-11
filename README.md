@@ -5,38 +5,46 @@
 
 -----
 
+## ***Inspired by [IPython](http://ipython.org/), built with love***
+
+-----
+
 # IPython-Dashboard
-A stand alone, light-weight web server for building, sharing graphs created in ipython. Build for data science, data analysis guys. Building an interactive visualization, collaborated dashboard, and real-time streaming graph. 
+A stand alone, light-weight web server for building, sharing graphs created in ipython. Build for data science, data analysis guys. Building an interactive visualization, collaborated dashboard, and real-time streaming graph.
 
+-----
 
-# Goal 
+# Goal
 
 - support raw html visualization
 - support python object visualization
-- Editable 
+- Editable
 - Real-time fresh when rendering a variable python object
 - Can be shared, both public and private [ need password ]
-- In the notebook, can share an object to a dashboard [ that's visualise that object in that dashboard ]
+- In the notebook, can share an object to a dashboard [ that's visualize that object in that dashboard ]
+
+-----
+
+# Screenshot and Demo
+
+[Demo on Youtube](https://youtu.be/LOWBEYDkn90)     
+[Demo on Youku](http://v.youku.com/v_show/id_XMTM3MTc5MTAwMA)
+
+![demo](docs/template-screenshot-0.1.2-1.jpg)
+
+![demo](docs/template-screenshot-0.1.2-2.jpg)
+
+![demo](docs/template-screenshot-0.1.2-3.jpg)
+
+-----
 
 
-# Raw Design
+# Usage
 
-- C/S model 
-- Server can interact with IPython kernel directly or indirectly 
-- Client get data from server internally or server push data to client
-- Client consists of several boxes, each box is an independent front-side object, and is editable and drag to rearrange the place to hold it.
+***IPython-Dashboard-Tutorial.ipynb***: [On nbviewer](http://nbviewer.ipython.org/github/litaotao/IPython-Dashboard/blob/v-0.1.2-visualiza-table/docs/IPython-Dashboard-Tutorial.ipynb) or [On github](https://github.com/litaotao/IPython-Dashboard/blob/v-0.1.2-visualiza-table/docs/IPython-Dashboard-Tutorial.ipynb)
 
 
-![architecture](docs/architecture.jpg)
-
-
-
-# Screenshot & [Demo](https://youtu.be/Xv0UjKVEttA)
-
-[![demo](docs/template-screenshot-1.jpg)](https://youtu.be/Xv0UjKVEttA)
-[![demo](docs/template-screenshot-2.jpg)](https://youtu.be/Xv0UjKVEttA)
-[![demo](docs/template-screenshot-3.jpg)](https://youtu.be/Xv0UjKVEttA)
-
+-----
 
 
 # Run tests
@@ -67,9 +75,91 @@ Ran 3 tests in 0.345s
 OK
 ```
 
+-----
+
+# Change Log
 
 
-# Related Projects & Products 
+
+- future
+    + import dashboard to ipython notebook, one click [ though I don't think it's necessary]
+    + front side, databricks style
+    + pep 8, code clean up & restructure
+    + hover tips
+    + edit modal can be resized
+    + Share one graph
+    + Share one dashboard
+    + Presentation mode
+    + slogan
+    + footer
+    + readthedoc
+    + unified message display center
+    + SQL Editor
+    + login management
+    + unified logger and exception report
+
+
+- ***V 0.1.3 : basic-curd-docs : [ current develop version ]***
+
+    - Dashboard
+        + restructure code for future develop
+        + more docs and tutorial
+        + basic curd operations
+        + gh-pages done
+        + publish on readthedoc
+        + hover tips
+
+    - SQL Editor
+        + start try using ace to build an online sql editor, but will develop it in the next stage after this version
+
+- ***V 0.1.2 : visualiza-table : [ current stable release ]***
+    - slogan: ***Inspired by IPython, built with love***
+
+    - Dashboard
+        + document and doc string
+        + usage
+        + simple visualize table data
+
+    - SQL Editor
+        + research & preparation
+
+
+- V 0.1.1 : dashboard-server   
+    - Dashboard
+        + docstring
+        + simple visualize table data
+
+    - SQL Editor
+        + research & preparation
+
+---------
+
+- ***V 0.1.1 : dashboard-server : [ current stable release ]***  
+    - Dashboard
+        - dashboard home page
+            + sort by dashboard name / creator / last update time
+
+        - dashboard page
+            + add graph in a dashboard
+            + re-arrange graph
+            + resize graph
+            + get table view in a graph
+
+    - SQL Editor
+
+
+- V 0.1 : dashboard-template
+    + Add dashboard client template
+    + Template consists of box, each box is an independent front-side object
+    + Template hierarchy:
+        + box page [add, delete, share one or all]
+        + box graph [add, delete, share one or all]
+        + rename
+
+-----
+
+
+# Related Projects & Products
 
 - [mpld3](https://github.com/jakevdp/mpld3)
 - [lighting](http://lightning-viz.org/)
@@ -85,64 +175,7 @@ OK
 - [c3js](http://c3js.org/)
 - [periscope](http://periscope.io)
 - [folium](https://github.com/python-visualization/folium)
-
-
-
-# Change Log
-
-
-- V 0.3.0
-    + import dashboard to ipython notebook, one click [ though I don't think it's necessary]
-
-
-- V 0.2.2
-    + front side, databricks style
-    + pep 8, code clean up & restructure
-    + hover tips
-    + edit modal can be resized
-    + Share one graph
-    + Share one dashboard
-    + Presentation mode
-    + slogan
-    + footer
-    + readthedoc
-
-
----------
-
-- ***V 0.2.1 [ currently ]***
-    
-    - Dashboard
-        - dashboard home page
-            + sort by dashboard name / creator / last update time
-
-        - dashboard page
-            + add graph in a dashboard
-            + re-arrange graph
-            + resize graph
-            + get table view in a graph
-
-    - SQL Editor
-
----------
-
-- V 0.2  
-    + Interact with server [ CURD ]
-    + Simple visualization
-    + Rearrange buttons [ add, share ]
-    + Dash json format
-        - dash number [list]
-        - content name
-        - content type
-    + docstring
-
-
-- V 0.1
-    + Add dashboard client template
-    + Template consists of box, each box is an independent front-side object
-    + Template hierarchy:
-        + box page [add, delete, share one or all]
-        + box graph [add, delete, share one or all]
-        + rename
-
-
+- [metabase](http://www.metabase.com/)
+- [gridstack](https://github.com/troolee/gridstack.js)
+- [gridster](http://gridster.net/)
+- [dashboards](https://github.com/jupyter-incubator/dashboards)
