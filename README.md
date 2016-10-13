@@ -9,6 +9,23 @@
 # IPython-Dashboard
 A stand alone, light-weight web server for building, sharing graphs created in IPython. Build for data science, data analysis guys. Aiming at building an interactive visualization, collaborated dashboard, and real-time streaming graph.
 
+# Screenshot and Demo
+
+[Demo on Youtube](https://www.youtube.com/watch?v=Sy_Kmi6FFUg&feature=youtu.be)     
+[Demo on Youku](http://v.youku.com/v_show/id_XMTM3MTc5MTAwMA)
+
+![screenshot](https://raw.githubusercontent.com/litaotao/IPython-Dashboard/master/docs/template-screenshot-0.1.3-1.jpg)
+
+![screenshot](https://raw.githubusercontent.com/litaotao/IPython-Dashboard/master/docs/template-dashboard-0.1.5-2.jpg)
+
+![screenshot](https://raw.githubusercontent.com/litaotao/IPython-Dashboard/master/docs/template-screenshot-4.jpg)
+
+![screenshot](https://raw.githubusercontent.com/litaotao/IPython-Dashboard/master/docs/template-screenshot-5.jpg)
+
+![screenshot](https://raw.githubusercontent.com/litaotao/IPython-Dashboard/master/docs/template-screenshot-0.1.4-1.jpg)
+
+![screenshot](https://raw.githubusercontent.com/litaotao/IPython-Dashboard/master/docs/template-screenshot-0.1.5-1.jpg)
+
 
 # Usage
 
@@ -133,21 +150,6 @@ A stand alone, light-weight web server for building, sharing graphs created in I
 ![wise-choice](https://raw.githubusercontent.com/litaotao/IPython-Dashboard/v-0.1.5-sql-server-log/docs/wise-choice.jpg)
 
 
-# Screenshot and Demo
-
-[Demo on Youtube](https://www.youtube.com/watch?v=Sy_Kmi6FFUg&feature=youtu.be)     
-[Demo on Youku](http://v.youku.com/v_show/id_XMTM3MTc5MTAwMA)
-
-![screenshot](https://raw.githubusercontent.com/litaotao/IPython-Dashboard/v-0.1.5-sql-server-log/docs/template-screenshot-0.1.3-1.jpg)
-
-![screenshot](https://raw.githubusercontent.com/litaotao/IPython-Dashboard/v-0.1.5-sql-server-log/docs/template-dashboard-0.1.5-2.jpg)
-
-![screenshot](https://raw.githubusercontent.com/litaotao/IPython-Dashboard/v-0.1.5-sql-server-log/docs/template-screenshot-0.1.4-1.jpg)
-
-![screenshot](https://raw.githubusercontent.com/litaotao/IPython-Dashboard/v-0.1.5-sql-server-log/docs/template-screenshot-0.1.5-1.jpg)
-
-
-
 # Run tests
 
 just run `sudo nosetests --with-coverage --cover-package=dashboard` under this repo
@@ -256,3 +258,5 @@ taotao@mac007:~/Desktop/github/IPython-Dashboard$
 - [gridster](http://gridster.net/)
 - [dashboards](https://github.com/jupyter-incubator/dashboards)
 - [js, css, html code style](https://github.com/fex-team/styleguide)
+- [www.creative-tim.com](http://www.creative-tim.com/products)
+- [creative-tim dashboard](http://www.creative-tim.com/product/light-bootstrap-dashboard)
